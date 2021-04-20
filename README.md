@@ -45,7 +45,5 @@ There must be a readme file documenting installation and usage.
 You can use any frameworks and libraries you want, but they must be included in the readme file documenting its purpose and a brief explanation with the reasoning for your choice.
 
 
-Endpoints
-*Post user
-
+# Endpoints
 
