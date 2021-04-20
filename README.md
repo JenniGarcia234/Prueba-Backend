@@ -46,4 +46,6 @@ You can use any frameworks and libraries you want, but they must be included in 
 
 
 # Endpoints
+#### /api_c/register/
 
+Parameters: `email, username, passwork`
