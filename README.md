@@ -55,7 +55,6 @@ Parameters: `email, username, password`
 Parameters: `email, password`
 
 
-#### /api_c/login/
+#### /api_c/my-profile-professor/
 
-Parameters: `email, password`
-
+Parameters: Authorization with token obtained when logging in
