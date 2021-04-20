@@ -58,3 +58,7 @@ Parameters: `email, password`
 #### /api_c/my-profile-professor/
 
 Parameters: Authorization with token obtained when logging in
+
+#### /api_c/my-profile-student/
+
+Parameters: Authorization with token obtained when logging in
