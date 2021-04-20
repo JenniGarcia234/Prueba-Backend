@@ -62,3 +62,13 @@ Parameters: Authorization with token obtained when logging in
 #### /api_c/my-profile-student/
 
 Parameters: Authorization with token obtained when logging in
+
+
+### /api_c/my-profile-professor/update/<int:pk>
+Parameters obtained: {
+        "pk": 3,
+        "username": "abcd123",
+        "email": "abcd123@gmail.com",
+        "firstname": "Jennifer",
+        "lastname": "García Estévez"
+    }
