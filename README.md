@@ -47,13 +47,12 @@ You can use any frameworks and libraries you want, but they must be included in 
 
 #Endpoints
 
-#Register user
-    path('register/', usersview.RegisterView.as_view(), name="register"),
-#Login user
-    path('login/', usersview.LoginAPIView.as_view(), name="login"),
-#Get my profile professor
+-Register user:
+    api_c/register/'
+    api_c/'login/'
+-Get my profile professor
     path('my-profile-professor/', usersview.UserProfileProfessor.as_view(), name="my_profile_professor"),
-#Get my profile student
+
     path('my-profile-student/', usersview.UserProfileStudent.as_view(), name="my_profile_student"),
 #Update profile professor 
     path('my-profile-professor/update/<int:pk>', usersview.UserProfileUpdateProfessor.as_view(), name="update_profile_professor"),
