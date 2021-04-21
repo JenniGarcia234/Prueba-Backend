@@ -65,10 +65,17 @@ Parameters: Authorization with token obtained when logging in
 
 
 #### /api_c/my-profile-professor/update/pk
-Parameters obtained: {
-        "pk": 3,
-        "username": "abcd123",
-        "email": "abcd123@gmail.com",
-        "firstname": "Jennifer",
-        "lastname": "García Estévez"
-    }
+
+###Agregar una pregunta
+
+####/api_c/questions/
+Parametros:
+question= id_question
+values= Array con las respuestas posibles
+correct= Array con las respuestas correctas, en caso de seleccionar pregunta de tipo booleano, el valor puede ser [0] o [1]
+
+
+
+
+
+  
