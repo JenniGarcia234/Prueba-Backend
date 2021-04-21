@@ -25,7 +25,7 @@ def courses_list(request):
 
 
 def add_courses(request):
-    serializer = AddLessonsSerializer(data=request.data)
+    serializer = CoursesSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save()
 
