@@ -69,7 +69,7 @@ Parameters: Authorization with token obtained when logging in
 ###Agregar una pregunta
 
 ####/api_c/questions/
-Parametros:
+#####Parametros:
 question= id_question
 values= Array con las respuestas posibles
 correct= Array con las respuestas correctas, en caso de seleccionar pregunta de tipo booleano, el valor puede ser [0] o [1]
