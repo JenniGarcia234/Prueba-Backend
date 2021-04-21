@@ -68,7 +68,7 @@ Parameters: Authorization with token obtained when logging in
 
 ###Agregar una pregunta
 
-´/api_c/questions/´
+####/api_c/questions/
 Parametros:
 `question= id_question
 values= Array con las respuestas posibles
