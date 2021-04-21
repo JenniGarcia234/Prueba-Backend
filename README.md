@@ -64,7 +64,7 @@ Parameters: Authorization with token obtained when logging in
 Parameters: Authorization with token obtained when logging in
 
 
-### /api_c/my-profile-professor/update/pk
+#### /api_c/my-profile-professor/update/pk
 Parameters obtained: {
         "pk": 3,
         "username": "abcd123",
