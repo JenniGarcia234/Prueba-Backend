@@ -110,7 +110,7 @@ El enpoint elimina las respuestas actuales y agrega las que se estén enviando `
 No se tiene un límite de respuestas posibles tampoco de respuestas correctas
 
 ### Responder todas las preguntas de una lección:
-#### {{url}}/api/all_answer_in_one_go/
+#### /api_c/all_answer_in_one_go/
 Los parámetros son:
 
 `questions_answers = dict con la forma {id_pregunta:[id_respuestas_seleccionadas]}
@@ -122,4 +122,21 @@ questions_answers = [{1:[2,3,4]},{2:[3]}]
 student = 12
 lesson = 3 `
 
-  
+### Responder preguntas por el estudiante
+Para obtener la pregunta:
+
+### api_c/question_for_user/<id_estudiante>
+
+Para responder la pregunta:
+
+### api_c/answer_question/
+
+Parámetros:
+
+`student = id_estudiante
+question =  id_pregunta
+response = [id_respuestas]
+Solo se debe envíar una lista con los id de las respuestas que el usuario haya seleccionado`
+
+
+
