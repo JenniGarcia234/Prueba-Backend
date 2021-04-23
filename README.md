@@ -74,8 +74,52 @@ Parametros:
 values= Array con las respuestas posibles
 correct= Array con las respuestas correctas, en caso de seleccionar pregunta de tipo booleano, el valor puede ser [0] o [1]`
 
+### Agregar respuesta
+Posterior, se procede a agregar las respuestas a dicha pregunta con el siguiente endpoint.
 
+#### /api_c/answers/
+Los parámetros son:
+`question= id de la pregunta
+values= array con las respuestas posibles, si el tipo de pregunta es Boolean entonces este campo puede ir vacio
+correct= array con los elementos correctos del array values, si el tipo de pregunta es Boolean entonces
+solo pueden haber 2 valores [0] para cuando la respuesta es False y [1] para cuando la respuesta es True`
 
+Ejemplo tipo pregunta BO y como respuesta Verdadero:
 
+`question= 1
+values= []
+correct=[1]`
+
+Ejemplo tipo pregunta MC1C, respuesta correcta es values[3]=respuesta3 
+
+`question= 1
+values= ["respuesta1","respuesta2","respuesta3"]
+correct=[3]
+ejemplo tipo pregunta MCWC, respuesta correcta es values[3]=respuesta3 o values[1]=respuesta1 `
+
+`question= 1
+values= ["respuesta1","respuesta2","respuesta3"]
+correct=[3,1]
+ejemplo tipo pregunta MCAC, respuesta correcta es values[3]=respuesta3 y values[1]=respuesta1 `
+
+`question= 1
+values= ["respuesta1","respuesta2","respuesta3"]
+correct=[3,1]
+El enpoint elimina las respuestas actuales y agrega las que se estén enviando `
+
+No se tiene un límite de respuestas posibles tampoco de respuestas correctas
+
+### Responder todas las preguntas de una lección:
+#### {{url}}/api/all_answer_in_one_go/
+Los parámetros son:
+
+`questions_answers = dict con la forma {id_pregunta:[id_respuestas_seleccionadas]}
+studen = id_estudiante
+lesson = id_leccion
+ejemplo contestada la lección 3 enviando id_respuestas[2,3,4] para id_preguna=1 y id_respuesta{3] para id_pregunta=2:
+
+questions_answers = [{1:[2,3,4]},{2:[3]}]
+student = 12
+lesson = 3 `
 
   
