@@ -122,14 +122,14 @@ questions_answers = [{1:[2,3,4]},{2:[3]}]
 student = 12
 lesson = 3 `
 
-### Responder preguntas por el estudiante
+#### Responder preguntas por el estudiante
 Para obtener la pregunta:
 
-### api_c/question_for_user/<id_estudiante>
+#### api_c/question_for_user/<id_estudiante>
 
 Para responder la pregunta:
 
-### api_c/answer_question/
+#### api_c/answer_question/
 
 Parámetros:
 
